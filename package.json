@@ -1,0 +1,17 @@
+{
+  "name": "mongodb-account",
+  "version": "1.0.0",
+  "description": "Try to make tools create mongodb account.",
+  "main": "index.js",
+  "author": "Hanif",
+  "license": "MIT",
+  "dependencies": {
+    "dog-names": "^2.0.0",
+    "generate-password": "^1.5.1",
+    "puppeteer": "^5.2.1",
+    "random-email": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^3.0.1"
+  }
+}
