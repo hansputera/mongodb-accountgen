@@ -24,7 +24,7 @@ export default class MongoDB {
         const password = this.password;
 
         await page.goto(this.mongodb_register);
-        await page.type('input[name="emailAddress"]', randomEmail());
+        await page.type('input[name="emailAddress"]', email);
         await page.type('input[name="firstName"]', randomDog.femaleRandom());
         await page.type('input[name="lastName"]', randomDog.maleRandom());
         await page.type('input[name="password"]', this.password as string);
@@ -32,11 +32,13 @@ export default class MongoDB {
         await page.type('input[name="company"]', this.companyName ? this.companyName : 'Scraper Corps.');
         await page.select('select[name="jobResponsibility"]', 'Student');
         await page.select('select[name="country"]', 'ID');
-        await page.click('input#checkbox-3470619');
-        await page.click(`button."css-ntpyb3 leafygreen-ui-l67amq"`);
-
+        await page.$$eval('input[type="checkbox"]', checkboxes => {
+            checkboxes.forEach(ch => (ch as any).parentElement.click());
+        });
+        await page.evaluate(() => (document.querySelectorAll("[class=\"css-ntpyb3 leafygreen-ui-xuxy0d\"]")[0] as any).click());
         await page.waitForNavigation();
-        
+        await page.close();
+        await browser.close();
         console.info(`+=+=+=+= MONGO DB ACCOUNT GENERATED =+=+=+=+=\nEmail: ${email}\nPassword: ${password}`);
         return true;
     }   
