@@ -3,8 +3,10 @@ import randomEmail from "random-email";
 import randomDog from "dog-names";
 import genPass from "generate-password";
 import Util from "./Utils";
-import MongoError from "./MongoError";
 const util = new Util();
+import useProxy from "puppeteer-page-proxy";
+import Proxyhandler from "./ProxyHandle";
+const prox = new Proxyhandler();
 
 export default class MongoDB {
     readonly mongodb_register = "https://account.mongodb.com/account/register";
@@ -17,12 +19,17 @@ export default class MongoDB {
     }
 
     async generator(): Promise<boolean> {
+        const proxy = await prox.generate();
         const browser = await launch();
         const page = await browser.newPage();
 
         const email = randomEmail();
         const password = this.password;
 
+        await page.setRequestInterception(true);
+        page.on("request", async request => {
+            await useProxy(request, proxy);
+        });
         await page.goto(this.mongodb_register);
         await page.type('input[name="emailAddress"]', email);
         await page.type('input[name="firstName"]', randomDog.femaleRandom());
