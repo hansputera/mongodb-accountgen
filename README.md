@@ -1,4 +1,4 @@
 # MongoDB Account Generator
 
-**Maybe, mongodb will give you limited to create account's**
-**And, if you got problem or something, open pr or issue.**
+- Proxy Rotate : Make no limit in make account progress.
+- TypeScript : Idk, i do this
