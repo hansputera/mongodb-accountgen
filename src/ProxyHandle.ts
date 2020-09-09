@@ -8,7 +8,6 @@ const urls: string[] = ["https://free-proxy-list.net/anonymous-proxy.html", "htt
 
 
 export default class ProxyHandle {
-    public checkerCallback!: (proxy: string, success: boolean, statusCode: number, advanced: any) => void;
     constructor(public opt?: ProxyOptions) {
         if (!this.opt) {
             const random: number = Math.floor(Math.random() * urls.length);
