@@ -6,7 +6,7 @@
   "author": "Hanif",
   "license": "MIT",
   "dependencies": {
-    "@types/cheerio": "^0.22.21",
+    "@types/cheerio": "^0.22.22",
     "@types/node-fetch": "^2.5.7",
     "@types/request": "^2.48.5",
     "@types/user-agents": "^1.0.0",
