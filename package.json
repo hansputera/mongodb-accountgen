@@ -16,7 +16,7 @@
     "node-fetch": "^2.6.1",
     "node-superfetch": "^0.1.10",
     "path": "^0.12.7",
-    "puppeteer": "^5.4.1",
+    "puppeteer": "^7.0.0",
     "puppeteer-page-proxy": "^1.2.8",
     "random-email": "^1.0.3",
     "request": "^2.88.2",
