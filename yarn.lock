@@ -439,10 +439,10 @@ domutils@^1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-dot-json@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/dot-json/-/dot-json-1.2.0.tgz#16f62bbb15b0b834f5c8de299cfb9e4d494f2ac1"
-  integrity sha512-4bEM7KHFl/U9gAI5nIvU0/fwVzNnE713K339vcxAMtxd2D9mZP6o65UwlcXigJL4rfk90UM0J+D7IPIFYZMQ8Q==
+dot-json@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/dot-json/-/dot-json-1.2.1.tgz#d32f67dd4e258711c786b3450bde427a9793c394"
+  integrity sha512-sHtCsDBBzhTUFhS12cAvUbP9JTr59LLNxnpNr6dlgbjZlN+nrWFs+uHXgsJvFmc5HoMFR4e60rdqd+GdSUlM3w==
   dependencies:
     detect-indent "~6.0.0"
     docopt "~0.6.2"
@@ -1639,12 +1639,12 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-user-agents@^1.0.559:
-  version "1.0.559"
-  resolved "https://registry.yarnpkg.com/user-agents/-/user-agents-1.0.559.tgz#389817f79dff667d9e5c8803631c41043e8eccd8"
-  integrity sha512-HdAlNS3vDxOGMRwmv8or05xL96MV3CEwQhUSFTCRoOvTOEnWhTEBPAHRry/xZpVTTOtx77UHMal8YKcx6fs7Lg==
+user-agents@^1.0.564:
+  version "1.0.564"
+  resolved "https://registry.yarnpkg.com/user-agents/-/user-agents-1.0.564.tgz#71f95863a6ca7588cbf437b720e150ff962bed59"
+  integrity sha512-tTcDw5XMiATuoAJaWWLgd6yX2WHyzriY1eO/78KiofzjmUXImN0++KWfo2nim54iTFAHxXCpeARvQk3PjdHNZg==
   dependencies:
-    dot-json "^1.2.0"
+    dot-json "^1.2.1"
     lodash.clonedeep "^4.5.0"
 
 util-deprecate@^1.0.1:
