@@ -20,7 +20,7 @@
     "puppeteer-page-proxy": "^1.2.8",
     "random-email": "^1.0.3",
     "request": "^2.88.2",
-    "user-agents": "^1.0.559"
+    "user-agents": "^1.0.565"
   },
   "devDependencies": {
     "@types/puppeteer": "^3.0.4"
